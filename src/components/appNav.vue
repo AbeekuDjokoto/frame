@@ -1,35 +1,62 @@
 <template>
   <header>
-    <div>
-        <figure>
-            <img src="@/assets/IMAGE.svg" alt="" srcset="">
-        </figure>
-    </div>
+    <div class="header">
+        <div class="heroLogo">
+                <img src="@/assets/Vector.svg" alt="" srcset="">
+                <p>Findtrend</p>
+        </div>
     <nav>
         <ul>
-            <li>Net Ninja Pro</li>
-            <li>All Courses</li>
-            <li>YouTube Channel</li>
-            <li>Login</li>
-            <li>Sign Up</li>
+            <li>About</li>
+            <li>How it works</li>
+            <li>Pricing</li>
+            <li>Solution</li>
+            <li>Features</li>
         </ul>
     </nav>
+
+    
+    <div>
+        <span class="login">Login</span>
+        <app-button-vue text="Register"></app-button-vue>
+    </div>
+        
+    </div>
   </header>
 </template>
 
 <script>
+import appButtonVue from './appButton.vue'
 export default {
     name: "appNav",
+    components: { appButtonVue },
 }
 </script>
 
 <style scoped>
-header{
-    background: #191919;
+.header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 40px 0px 40px;
+    padding: 28px 80px 0px 80px;
+}
+
+.heroLogo{
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
+p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    /* identical to box height, or 24px */
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 10px;
 }
 
 ul{
@@ -39,11 +66,28 @@ ul{
 }
 
 ul li{
+    font-family: 'Scope One', serif;
+    font-style: normal;
     font-weight: 400;
-    font-size: 13px;
-    line-height: 20px;
-    /* identical to box height, or 154% */
-    letter-spacing: 0.5px;
+    font-size: 18px;
+    line-height: 100%;
+    /* identical to box height, or 18px */
+    text-align: center;
     color: #FFFFFF;
 }
+
+.login{
+    font-family: 'Scope One', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    /* identical to box height, or 18px */
+    text-align: center;
+    color: #FFFFFF;
+    margin-right: 40px;
+}
+
+
+
 </style>
