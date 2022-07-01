@@ -28,4 +28,15 @@ figure{
     align-items: center;
     margin-bottom: 40px;
 }
+
+@media screen and (max-width: 375px) {
+figure{
+    margin-bottom: 16px;
+}
+
+img{
+    width: 339px;
+}
+}
+
 </style>

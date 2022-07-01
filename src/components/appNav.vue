@@ -16,7 +16,7 @@
     </nav>
 
     
-    <div>
+    <div class="display">
         <span class="login">Login</span>
         <app-button-vue text="Register"></app-button-vue>
     </div>
@@ -86,6 +86,16 @@ ul li{
     text-align: center;
     color: #FFFFFF;
     margin-right: 40px;
+}
+
+@media screen and (max-width: 375px) {
+.header{
+    padding: 24px 80px 0px 18px;
+}
+
+ul, .display{
+    display: none;
+}
 }
 
 

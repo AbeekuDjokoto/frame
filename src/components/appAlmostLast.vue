@@ -44,4 +44,23 @@ span{
     text-align: center;
     margin-top: 56px;
 }
+
+@media screen and (max-width: 375px) {
+h1{
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 112%;
+}
+
+span{
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 112%;
+}
+
+.move{
+    margin-top: 40px;
+}
+
+}
 </style>

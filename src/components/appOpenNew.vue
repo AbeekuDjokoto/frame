@@ -2,6 +2,7 @@
   <main>
     <div>
         <h1>Open new tabs is sh*t</h1>
+        <img src="@/assets/Group427.svg" alt="" class="arrow">
         <div class="enclosure">
             <div class="card">
                 <img src="@/assets/Group16.svg" alt="">
@@ -9,6 +10,7 @@
                 <img src="@/assets/Group1.svg" alt="">
             </div>
         </div>
+        <img src="@/assets/Group428.svg" alt="" class="arrow2">
         
         <div class="para">
             <p>A solution for your browser tabs and don't make your device get slower over time. Get <br>
@@ -45,6 +47,18 @@ h1{
     text-align: center;
     color: #000000;
     margin-bottom: 60px;
+}
+
+.arrow{
+    position: relative;
+    top: 150px;
+    left: 240px;
+}
+
+.arrow2{
+    position: relative;
+    left: 920px;
+    bottom: 150px;
 }
 .enclosure{
     padding: 60px 80px;
@@ -83,5 +97,58 @@ span{
     text-align: center;
     color: #000000;
     margin-top: 60px;
+}
+
+@media screen and (max-width: 375px) {
+h1{
+    font-size: 36px;
+    line-height: 112%;
+    margin-bottom: 32px;
+}
+
+.arrow{
+    top: 190px;
+    left: 10px;
+    transform: rotate(-17.64deg);
+}
+.enclosure{
+    padding: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 339px;
+    border-radius: 14px;
+    align-items: center;
+}
+
+.arrow2{
+    position: relative;
+    left: 280px;
+    bottom: 185px;
+    transform: rotate(-25.64deg);
+}
+.card{
+    /* padding: 27px 30px; */
+    padding: 22px 22px;
+    width: 291px;
+    align-items: center;
+}
+
+span{
+    font-size: 18.3023px;
+    line-height: 24px;
+    /* identical to box height */
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0px 3px 0px 3px;
+    align-items: center;
+}
+
+.para{
+    font-size: 14px;
+    line-height: 150%;
+    margin-top: 34px;
+}
+
+
 }
 </style>

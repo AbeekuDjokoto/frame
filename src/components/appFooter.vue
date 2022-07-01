@@ -1,79 +1,119 @@
 <template>
-    <footer>
-        <div class="infoFooter">
-            <h3>&copy; Net Ninja 2022</h3>
-            <ul>
-                <li><a href="#">Net Ninja on Twitter</a></li>
-                <li><a href="#">Net Ninja on YouTube</a></li>
-                <li><a href="#">Get Net Ninja Pro</a></li>
-            </ul>
+  <header>
+    <div class="header">
+        <div class="heroLogo">
+                <img src="@/assets/blackLogo.svg" alt="" srcset="">
+                <p>Findtrend</p>
         </div>
-        <div class="addInfo">
+
+
+        <nav class="footerNav">
             <ul>
-                <li><a href="#">Terms of Service</a></li>
-                <li><a href="#">Privacy Policy</a></li>
+                <li>Privacy Policy</li>
+                <li>Terms and Conditions</li>
+                <li>Contact Us</li>
+                <li>Careers</li>
             </ul>
-        </div>
-    </footer>
+        </nav>
+    
+        
+    </div>
+  </header>
 </template>
 
 <script>
+
 export default {
-    name: 'appFooter'
+    name: "appNav",
 }
 </script>
 
 <style scoped>
-footer{
+.header{
     display: flex;
     justify-content: space-between;
-    padding: 17px 120px 20px 120px;
-    background: #252525;
-    border-radius: 0px;
+    align-items: center;
+    padding: 29px 80px 29px 80px;
+    background: white;
 }
 
-.infoFooter h3{
+.heroLogo{
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
+p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    /* identical to box height, or 24px */
+    text-align: center;
+    color: #000000;
+    margin-left: 10px;
+}
+
+ul{
+    display: flex;
+    gap: 0px 20px;
+    list-style: none;
+}
+
+ul li{
+    font-family: 'Scope One', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 20px;
-    /* identical to box height, or 111% */
+    line-height: 100%;
+    /* identical to box height, or 18px */
+    text-align: center;
+    color: #000000;
+}
+
+.login{
+    font-family: 'Scope One', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    /* identical to box height, or 18px */
+    text-align: center;
     color: #FFFFFF;
-    margin-bottom: 13px;
+    margin-right: 40px;
 }
 
-.infoFooter ul{
-    text-decoration: none;
-    list-style-type: none;
-    display: block;
+@media screen and (max-width: 375px) {
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 62px 0px 80px 0px;
+    background: white;
 }
 
-.infoFooter ul li a{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    /* identical to box height, or 143% */
-    letter-spacing: 0.5px;
-    color: #777777;
-    text-decoration: none;
-} 
-
-
-.addInfo ul{
-    text-decoration: none;
-    list-style-type: none;
-    display: block;
+.heroLogo{
+    margin-left: 62px;
+    margin-bottom: 99px;
 }
 
-.addInfo ul li a{
-    text-decoration: none;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    /* identical to box height, or 143% */
-    letter-spacing: 0.5px;
-    color: #777777;
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 40px 0px;
+    list-style: none;
+    text-align: center;
 }
+
+.footerNav{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+
+
 </style>

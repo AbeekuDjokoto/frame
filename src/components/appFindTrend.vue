@@ -1,8 +1,8 @@
 <template>
   <div class="main">
-    <h1>Findtrend helps you to increase your <br>
-productivity and reduce your computer's <br>
-memory load, <span>an application that can <br>
+    <h1>Findtrend helps you to increase your 
+productivity and reduce your computer's 
+memory load, <span>an application that can 
 fulfill your daily browsing needs.</span> </h1>
 
 <h1 class="finder">Findtrend make +1000 Startup grow</h1>
@@ -45,5 +45,33 @@ span{
 
 .finder{
     margin-top: 280px;
+}
+
+@media screen and (max-width: 375px) {
+.main{
+    padding: 80px 18px 32px 18px;
+    background: #FFFFFF;
+    text-align: center
+}
+
+h1{
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 43px;
+    flex-wrap: wrap;
+}
+
+span{
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 43px;
+}
+
+.finder{
+    margin-top: 160px;
+    text-align: center
+}
+
+
 }
 </style>

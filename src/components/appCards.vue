@@ -30,4 +30,20 @@ export default {
     margin-bottom: 32px;   
 }
 
+@media screen and (max-width: 375px) {
+.cards {
+    background: #F5F5F5;
+    border-radius: 8px;
+    padding: 20px 23px;
+    text-align: center;
+    width: 162px;
+    margin-right: 15px;   
+    margin-bottom: 15px;   
+}
+
+img{
+    width: 100px;
+}
+}
+
 </style>

@@ -20,7 +20,7 @@
             <p>Product Design</p>
             <p><img src="@/assets/Group1.svg" alt="" srcset=""></p>
         </div>
-    </div> 
+    </div>  
     <div class="fourthCard">
             <img src="@/assets/ball.svg" alt="" srcset="">
             <p>Elon Musk - Search</p>
@@ -118,6 +118,72 @@ p{
 
 .pad{
     padding-bottom: 99px;
+}
+
+@media screen and (max-width: 375px) {
+.total{
+    margin: 0px 90px 0px 0px;
+    text-align: center;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.card{
+    padding: 25px 13px 25px 25px;
+    width: 293.04px;
+    z-index: 1;
+    box-shadow: 5px 5px 5px 5px black;
+    margin-left: 0px;
+    text-align: center;
+}
+
+p{
+    font-size: 20.4445px;
+    margin: 0px 3px 0px 13px; 
+}
+
+.secondCard {
+    padding: 25px 13px 25px 25px;
+    width: 292.3px;
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.secondCard p{
+    font-size: 20.393px;
+    line-height: 24px;
+    /* identical to box height */
+    margin: 0px 3px 0px 11px; 
+}
+
+.test{
+    margin: 0px; 
+    text-align: center;
+}
+
+.thirdCard{
+    position: relative;
+    background: #181818;
+    transform: rotate(-4deg);
+    padding: 25px 13px 25px 25px;
+    /* z-index: -1; */
+    width: 293.04px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.fourthCard{
+    padding: 25px 13px 25px 25px;
+    width: 293.04px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+}
+
+.fourthCard p{
+    margin: 0px 3px 0px 11px; 
+}
+
 }
 
 </style>

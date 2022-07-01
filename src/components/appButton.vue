@@ -5,7 +5,7 @@
 <script>
 export default {
     name: "AppButton",
-    props: ["text"]
+    props: ["text"],
 };
 </script>
 
@@ -66,6 +66,7 @@ export default {
 }
 
 .startFreeTrial{
+    font-family: 'Scope One', serif;
     padding: 17px 88px;
     background: #A8FF35;
     border-radius: 29px;
@@ -79,6 +80,7 @@ export default {
 }
 
 .joinNow{
+    font-family: 'Scope One', serif;
     background: #000000;
     border-radius: 40px;
     padding: 16px 52px;
@@ -89,6 +91,36 @@ export default {
     /* or 25px */
     text-align: center;
     color: #FFFFFF;
+}
+
+@media screen and (max-width: 375px) {
+.getStarted{
+    padding: 12px 24px;
+    font-size: 14px;
+}
+
+.blackButton{
+    padding: 12px 24px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+    margin-top: 32px;
+}
+
+.startFreeTrial{
+    padding: 15px 80px;
+    border-radius: 27.3083px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 140%;
+}
+
+.joinNow{
+    padding: 12px 24px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+}
 }
 
 

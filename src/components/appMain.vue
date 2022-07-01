@@ -2,7 +2,7 @@
     <div >
         <h1>Minimize your tabs.<br>
             Find the trends!</h1>
-        <p class="para">Don't let your computer memories consumes all of those browser <br>
+        <p class="para">Don't let your computer memories consumes all of those browser tabs.
             Findtrend  let you gathers all of your favorite website into one place.</p>
         <div class="random">
             <app-button-vue text="Get Started 🔥" class="getStarted"></app-button-vue>
@@ -55,6 +55,9 @@ h1{
     text-align: center;
     color: #8B8B8B;
     margin: 24px 0px 40px 0px;
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .random{
@@ -81,5 +84,28 @@ h1{
     text-align: center;
 }
 
+@media screen and (max-width: 375px) {
+h1{
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 112%;
+}
+
+.para{
+    width: 286px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    margin: 16px 0px 32px 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.arrowInfo{
+    display: none;
+}
+}
 
 </style>

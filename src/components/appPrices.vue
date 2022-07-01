@@ -1,4 +1,18 @@
 <template>
+    <div class="heading">
+        <h1>Get your best deal</h1>
+        <div class="headingPara">
+            <div class="spaceOrigin">
+                <p>Monthly</p>
+                <img src="@/assets/Group429.svg" alt="">
+                <p class="year">Yearly</p>
+                <img class="arrow" src="@/assets/Group450.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <figure>
+        <img class="mArrow" src="@/assets/Group450.svg" alt="">
+    </figure>
     <div class="enclosure">
     <div class="cards" v-for="card in cards" 
         :key="card.id" 
@@ -21,12 +35,12 @@
             <p>{{ card.text6 }}</p>
             <p>{{ card.text7 }}</p>
         </div> 
-        <app-button-vue text="Start Free Trial" class="startFreeTrial"></app-button-vue>
+        <app-button-vue text="Start Free Trial" class="startFreeTrial" :style="[card.isTrue === true ? {background: '#000000', color: '#FFFFFF'} : 'none' ]"></app-button-vue>
     </div>
 </div>
 </template>
 
-<script scoped>
+<script>
 import appButtonVue from './appButton.vue'
 export default {
     name: "priceCards",
@@ -45,6 +59,63 @@ export default {
 </script>
 
 <style scoped>
+
+.heading{
+    padding: 140px 0px 0px 0px;
+    background:#000000;
+}
+
+.headingPara{
+    display: flex;
+    align-items: center;
+}
+.headingPara p{
+    font-family: 'Scope One', serif;
+    color: #FFFFFF;
+    margin-right: 24px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+
+.spaceOrigin{
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    display: flex;
+}
+.heading h1{
+    font-family: 'Scope One', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 76px;
+    /* identical to box height */
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.year{
+    font-family: 'Scope One', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+    color: #F5F5F5;
+    opacity: 0.5;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+figure{
+    background: #000000;
+    display: none;
+}
 .enclosure{
     display: flex;
     justify-content: space-evenly;
@@ -68,6 +139,7 @@ export default {
     /* identical to box height, or 36px */
     color: #000000;
     margin-bottom: 8px;
+    text-align: left;
 }
 
 .personal p{
@@ -106,6 +178,7 @@ hr{
 
 
 .para p{
+    font-family: 'Scope One', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -114,4 +187,104 @@ hr{
     margin-bottom: 30px;
 }
 
+@media screen and (max-width: 375px) {
+.heading{
+    padding: 80px 0px 0px 0px;
+}
+
+.heading h1{
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 43px;
+}
+
+.headingPara p{
+    margin-right: 24px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.spaceOrigin{
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.arrow{
+    position: absolute;
+    /* top: 90px; */
+    left: 150px;
+    margin-top: 55px;
+    transform: rotate(-180deg);
+
+}
+
+figure{
+    background: #000000;
+    display: none;
+}
+
+.mArrow{
+    display: none;
+}
+
+.year{
+    justify-content: space-evenly;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+    color: #F5F5F5;
+    opacity: 0.5;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.enclosure{
+    flex-wrap: wrap;
+    padding: 80px 0px 80px 0px;
+}
+
+.cards {
+    border-radius: 15.0667px;
+    padding: 30px 30px;
+    width: 339px;
+    margin-bottom: 24px;
+}
+
+.personal h1{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    margin-bottom: 14px;
+    text-align: left;
+}
+
+.space .para{
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 100%;
+}
+
+.space .month{
+    font-family: 'Scope One', serif;
+    font-style: normal;
+    padding-top: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+}
+
+.para p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    margin-bottom: 30px;
+}
+
+
+
+}
 </style>

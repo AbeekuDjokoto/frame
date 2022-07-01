@@ -16,11 +16,7 @@
     <div class="section">
       <h1>All platform connect to Findtrend</h1>
     <div class="courses">
-      <AppElonMuskVue v-for="card in anotherCards" 
-      :key="card.id"
-      :imgSrc="card.url"
-      :style="[card.green === 0 ? {background: '#A8FF35' } : 'none' ]"
-      :id="card.id"></AppElonMuskVue>
+      <AppElonMuskVue></AppElonMuskVue>
     </div>
     <AppImageElon></AppImageElon>
   </div>
@@ -30,7 +26,7 @@
   <div class="last">
     <AppAlmostLastVue></AppAlmostLastVue>
   </div>
-    <!-- <AppFooter></AppFooter> -->
+    <AppFooter></AppFooter>
   </main>
   
   
@@ -71,18 +67,7 @@ export default {
           {id: "14a", url: require('@/assets/image127.svg')},
           {id: "15a", url: require('@/assets/image118.svg')},
           {id: "16a", url: require('@/assets/image130.svg')},
-        ],
-        anotherCards: [
-          {id: "1aa", url: require('@/assets/image105.svg')},
-          {id: "2aa", url: require('@/assets/image96.svg'), green: 0},
-          {id: "3aa", url: require('@/assets/Rectangle6.svg')},
-          {id: "4aa", url: require('@/assets/image111.svg')},
-          {id: "5aa", url: require('@/assets/image113.svg')},
-          {id: "6aa", url: require('@/assets/image114.svg')},
-          {id: "7aa", url: require('@/assets/image115.svg')},
-          {id: "7aa", url: require('@/assets/image112.svg')},
         ]
-        
       }
     }
 }
@@ -134,7 +119,6 @@ body{
   text-align: center;
   color: #000000;
   padding: 140px 0px 80px 0px;
-  font-family: 'Scope One', serif;
 }
 
 .last{
@@ -142,5 +126,25 @@ body{
   background: #A8FF35;
 }
 
+@media screen and (max-width: 375px) {
+html, body{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.section{
+  background: #FAFAFA;
+  padding: 0px 18px 140px 18px;
+  text-align: center;
+  margin-left: auto; 
+}
+
+.section h1{
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 43px;
+  padding: 80px 0px 32px 0px;
+}
+}
 
 </style>
